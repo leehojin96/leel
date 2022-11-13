@@ -5,4 +5,5 @@ public class User {
 	String id;
 	String pw;
 	String email;
-}
+	String birth;
+}s
