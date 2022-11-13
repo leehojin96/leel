@@ -4,5 +4,5 @@ public class User {
 	String name;
 	String id;
 	String pw;
-	String phone;
+	String email;
 }
