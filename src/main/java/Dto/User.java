@@ -1,4 +1,4 @@
-package Dao;
+package Dto;
 
 public class User {
 	String id;

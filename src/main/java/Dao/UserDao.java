@@ -1,14 +1,14 @@
 
-package Dto;
+package Dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import Dao.User;
+import Dto.User;
 
-public class UserDto {
+public class UserDao {
 
 	String driver = "oracle.jdbc.driver.OracleDriver";
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -71,7 +71,7 @@ public class UserDto {
 	//출력 : 고유키 존재 확인
 	//이동 : (로그인/아이디찾기 창 alert)
 	//의문 : 
-	public boolean IdFind(User user) {
+	public boolean IdFind(UserDao user) {
 		
 		
 		return true;

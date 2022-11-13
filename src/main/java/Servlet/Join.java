@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Dao.User;
-import Dto.UserDto;
+import Dao.UserDao;
+import Dto.User;
 import Service.UserService;
 
 @WebServlet("/join")
@@ -28,8 +28,8 @@ public class Join extends HttpServlet{
 		String adress = request.getParameter("adress");
 		
 		User user = new User(id, pw, name, birth, gender, email, phone, adress);
-		UserDto userDto = new UserDto();
-		UserService userService =  new UserService(userDto);
+		UserDao userDao = new UserDao();
+		UserService userService =  new UserService(userDao);
 		userService.insert(user);
 		
 		//회원가입 완료 -> Servlet - Login

@@ -1,16 +1,16 @@
 package Service;
 
-import Dao.User;
-import Dto.UserDto;
+import Dao.UserDao;
+import Dto.User;
 
 public class UserService {
-	UserDto userDto;
+	UserDao userDao;
 
-	public UserService(UserDto userDto) {
-		this.userDto = userDto;
+	public UserService(UserDao userDao) {
+		this.userDao = userDao;
 	}
 	
 	public void insert(User user) {
-		userDto.insert(user);
+		userDao.insert(user);
 	}
 }
